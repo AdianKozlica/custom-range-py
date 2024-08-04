@@ -15,7 +15,7 @@ static PyMemberDef RangeObject_members[] = {
     {"begin", T_INT, offsetof(RangeObject, begin), 0, "beginning of range"},
     {"end", T_INT, offsetof(RangeObject, end), 0, "end of range"},
     {"step", T_INT, offsetof(RangeObject, step), 0, "step of increase"},
-    {NULL}  /* Sentinel */
+    {NULL}  /* Sentinel (specify end of members array) */
 };
 
 static RangeObject * 
